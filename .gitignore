@@ -1,0 +1,57 @@
+# Python
+
+**pycache**/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging
+
+*.egg-info/
+build/
+dist/
+
+# Jupyter Notebook
+
+.ipynb_checkpoints/
+
+# Environment variables and secrets
+
+.env
+.env.*
+!.env.example
+
+# IDEs and editors
+
+.vscode/
+.idea/
+
+# Operating system
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+
+*.log
+
+# Local database
+
+data/database/*.db
+data/database/*.sqlite
+data/database/*.sqlite3
+
+# Data files
+
+*.csv
+
+# Annotation files
+
+anotacoes/*.txt
