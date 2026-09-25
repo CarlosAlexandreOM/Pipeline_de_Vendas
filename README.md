@@ -86,7 +86,7 @@ O pipeline foi estruturado em etapas sequenciais, com o objetivo de transformar 
 
 **Fluxo do projeto:**
 
-`Dados brutos → Extração → Limpeza → Transformação e modelagem → Validação → Carregamento → Análise SQL → Power BI`
+`Dados brutos -> Extração -> Limpeza -> Transformação e modelagem -> Validação -> Carregamento -> Análise SQL -> Power BI`
 
 ### Etapas
 
@@ -187,6 +187,9 @@ Pipeline_de_Vendas/
 │   └── 03_transformation_and_modeling.ipynb
 ├── reports/
 │   └── images/
+│       ├── Concetracao_faturamento.png
+│       ├── Desempenho_comercial.png
+│       ├── Distribuicao_faturamento.png
 │       ├── Modelo_Logico_Final.jpeg
 │       ├── Modelo_Logico_Inicial.jpeg
 │       └── Visao_geral.png
