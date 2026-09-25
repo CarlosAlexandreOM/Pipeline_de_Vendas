@@ -55,3 +55,7 @@ data/database/*.sqlite3
 # Annotation files
 
 anotacoes/*.txt
+
+# Power BI
+
+*.pbix
