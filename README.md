@@ -217,22 +217,41 @@ Pipeline_de_Vendas/
 
 ```bash
 git clone https://github.com/CarlosAlexandreOM/Pipeline_de_Vendas.git
+```
+
+### 2. Acesse a pasta do projeto
+
+```bash
 cd Pipeline_de_Vendas
 ```
 
-### 2. Instale as dependências
+### 3. Crie e ative o ambiente Conda
 
-O projeto utiliza `pyproject.toml` para gerenciamento das dependências.
+Crie o ambiente a partir do arquivo `environment.yml`:
+
+```bash
+conda env create -f environment.yml
+```
+
+Ative o ambiente:
+
+```bash
+conda activate pipeline_vendas
+```
+
+### 4. Instale o projeto e suas dependências
+
+O projeto utiliza `pyproject.toml` para gerenciamento das dependências. Com o ambiente Conda ativado, execute:
 
 ```bash
 pip install .
 ```
 
-### 3. Baixe os arquivos do projeto
+### 5. Baixe os arquivos do projeto
 
 Os arquivos necessários para execução do projeto estão disponíveis no [Google Drive](https://drive.google.com/drive/folders/1-E8JKK3i9kc2Int4LL_X0gdiYMvc1fzh?usp=drive_link).
 
-### 4. Execute o pipeline
+### 6. Execute o pipeline
 
 Execute as etapas de extração, limpeza, transformação, validação e carregamento conforme a estrutura definida no projeto.
 
