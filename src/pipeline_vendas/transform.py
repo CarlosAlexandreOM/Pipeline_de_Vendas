@@ -2,7 +2,19 @@ import pandas as pd
 
 
 def transform_data(dfs: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
-    """Gera um novo dicionário contendo as tabelas após sua modelagem e transformação."""
+    """
+    Gera um novo dicionário contendo as tabelas após sua modelagem e transformação.
+
+    Parameters
+    ----------
+    dfs : dict[str, pd.DataFrame]
+        Dicionário contendo os DataFrames
+
+    Returns
+    -------
+    dict[str, pd.DataFrame]
+        Dicionário contendo os DataFrames após a sua modelagem e transformação.
+    """
 
     new_orders = dfs["orders"].merge(
         dfs["customers"],
@@ -81,7 +93,19 @@ def transform_data(dfs: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
 
 
 def format_data(dfs: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
-    """Renomeia e organiza as colunas das tabelas."""
+    """
+    Renomeia e organiza as colunas das tabelas.
+
+    Parameters
+    ----------
+    dfs : dict[str, pd.DataFrame]
+        Dicionário contendo os DataFrames
+
+    Returns
+    -------
+    dict[str, pd.DataFrame]
+        Dicionário contendo os DataFrames após a renomear e organizar as colunas
+    """
 
     dfs["dim_customers"] = dfs["dim_customers"].rename(
         columns={"customer_unique_id": "customer_id"}
